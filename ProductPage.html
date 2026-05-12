@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="homepage images/gym logo.jpg">
+    <link rel="stylesheet" href="ProductPage.css">
+    <title>Matrix Products</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="homepage images/gym logo.jpg" alt="Matrix gym">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="membershipPage.html">Membership</a></li>
+                <li><a href="ProductPage.html">Products</a></li>
+                <li><a href="ProgramPage.html">Programs</a></li>
+            </ul>
+            <div class="cart-btn">
+                <button>Cart (0)</button>
+            </div>
+        </nav>
+        <div class="menu-icon">&#9776;</div>
+    </header>
+
+    <main>
+        <div id="search-bar-container">
+            <input type="text" class="search-bar" placeholder="Search products...">
+        </div>
+
+        <section id="main">
+            <div id="filter-section">
+                <h3>Filters</h3>
+                <h4>Categories</h4>
+                <ul>
+                    <li><input type="checkbox" name="Categories" value="Supplements">Supplements</li>
+                    <li><input type="checkbox" name="Categories" value="Equipment">Equipment</li>
+                    <li><input type="checkbox" name="Categories" value="Apparel">Apparel</li>
+                </ul>
+                <h4>Availability</h4>
+                <ul>
+                    <li><input type="checkbox" name="Availability" value="Stock">In Stock</li>
+                    <li><input type="checkbox" name="Availability" value="Sale">On Sale</li>
+                </ul>
+                <h4>Price Range</h4>
+                <input type="range" name="Price" id="price-range" min="0" max="200" value="0" step="1">
+                <p>Price: <span id="price-value">0</span></p>
+                <button type="submit" id="filter_button">Filter</button>
+                <button type="reset" id="reset_button">Reset</button>
+            </div>
+
+            <div id="Products">
+                <div class="Product-item">
+                    <div class="Product-image"><img src="images/wheyProtein.webp" alt="Whey Protein"></div>
+                    <div class="Product-info">
+                        <p>Whey Protein</p>
+                        <p>49.99$</p>
+                        <div class="rating"></div>
+                        <div class="Product-description">
+                            <p>Whey Protein is a high-quality protein powder designed to support muscle recovery and growth. It's quickly absorbed, making it ideal for post-workout nutrition.</p>
+                        </div>
+                        <button class="add-to-cart" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="Product-item">
+                    <div class="Product-image"><img src="images/Creatine.webp" alt="Creatine"></div>
+                    <div class="Product-info">
+                        <p>Creatine</p>
+                        <p>19.99$</p>
+                        <div class="rating"></div>
+                        <div class="Product-description">
+                            <p>It helps replenish energy levels during intense workouts, promoting enhanced performance and faster muscle recovery.</p>
+                        </div>
+                        <button class="add-to-cart" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="Product-item">
+                    <div class="Product-image"><img src="images/mass gainer.webp" alt="Mass Gainer"></div>
+                    <div class="Product-info">
+                        <p>Mass Gainer</p>
+                        <p>29.99$</p>
+                        <div class="rating"></div>
+                        <div class="Product-description">
+                            <p>It provides a balanced blend of protein, carbohydrates, and essential nutrients, perfect for individuals struggling to meet calorie requirements through diet alone.</p>
+                        </div>
+                        <button class="add-to-cart" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="Product-item">
+                    <div class="Product-image"><img src="images/gloves.webp" alt="Training Gloves"></div>
+                    <div class="Product-info">
+                        <p>Training Gloves</p>
+                        <p>14.99$</p>
+                        <div class="rating"></div>
+                        <div class="Product-description">
+                            <p>Designed for comfort and durability, our Training Gloves provide excellent grip and palm protection during workouts.</p>
+                        </div>
+                        <button class="add-to-cart" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="Product-item">
+                    <div class="Product-image"><img src="images/Wrist straps.webp" alt="Weightlifting Wrist Straps"></div>
+                    <div class="Product-info">
+                        <p>Weightlifting Wrist Straps</p>
+                        <p>9.99$</p>
+                        <div class="rating"></div>
+                        <div class="Product-description">
+                            <p>Enhance your lifting performance with our Weightlifting Wrist Straps. Crafted from high-quality, durable materials, these straps provide superior support and stability to your wrists during heavy lifts.</p>
+                        </div>
+                        <button class="add-to-cart" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="Product-item">
+                    <div class="Product-image"><img src="images/bottle.jpg" alt="Water Bottle"></div>
+                    <div class="Product-info">
+                        <p>Water Bottle</p>
+                        <p>4.99$</p>
+                        <div class="rating"></div>
+                        <div class="Product-description">
+                            <p>Stay hydrated with our sleek and practical Water Bottle, designed for fitness enthusiasts. Made from BPA-free materials, it features a leak-proof lid, easy-to-grip design, and a convenient capacity for your hydration needs.</p>
+                        </div>
+                        <button class="add-to-cart" type="button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="page-number-container">
+            <nav>
+                <ul>
+                    <li><span id="current-page">1</span></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">></a></li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>Your go-to resource for fitness programs and supplements. Join us and reach your body goals with guidance from experts and a supportive community.</p>
+            </div>
+            <div class="footer-section quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="membershipPage.html">Membership</a></li>
+                    <li><a href="ProductPage.html">Products</a></li>
+                    <li><a href="ProgramPage.html">Programs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <div class="contact-info">
+                    <p>Email: support@matrixgym.com</p>
+                    <p>Phone: +961 79 182 586</p>
+                </div>
+                <div class="socials">
+                    <a href="#"><img src="homepage images/facebook icon.webp" alt="Facebook"></a>
+                    <a href="#"><img src="homepage images/tiktok icon.webp" alt="Tiktok"></a>
+                    <a href="#"><img src="homepage images/instagram icon.webp" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MatrixGym. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="ProductPage.js"></script>
+</body>
+</html>
