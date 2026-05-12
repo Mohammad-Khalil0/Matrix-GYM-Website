@@ -6,7 +6,7 @@ This project demonstrates my ability to build a complete multi-page website from
 
 ## Live Demo
 
-`https://mohammad-khalil0.github.io/Matrix-GYM-Website/`
+[View the live site](https://mohammad-khalil0.github.io/Matrix-GYM-Website/)
 
 ## Project Pages
 
